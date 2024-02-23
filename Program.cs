@@ -10,3 +10,23 @@ string[] EnterArrayFromConsole()
     }
     return array;
 }
+
+int CalculateResultArraySize(string[] array, int limit)
+{
+    int i = 0;
+    int j = 0;
+    while (i < array.Length)
+    {
+        if (array[i].Length > limit)
+        {
+            i++;
+        }
+        else
+        {
+            j++;
+            i++;
+        }
+    }
+    return j;
+}
+
